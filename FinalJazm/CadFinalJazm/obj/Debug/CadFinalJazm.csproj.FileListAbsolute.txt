@@ -1,0 +1,12 @@
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\CadFinalJazm.dll.config
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\CadFinalJazm.dll
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\CadFinalJazm.pdb
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\EntityFramework.dll
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\EntityFramework.SqlServer.dll
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\EntityFramework.xml
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\bin\Debug\EntityFramework.SqlServer.xml
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\obj\Debug\CadFinalJazm.csproj.AssemblyReference.cache
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\obj\Debug\CadFinalJazm.csproj.CoreCompileInputs.cache
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\obj\Debug\CadFinalJazm.csproj.CopyComplete
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\obj\Debug\CadFinalJazm.dll
+D:\FACULTAD\INFORMATICA\AÑO 2022\SIS-457\FinalJazm\CadFinalJazm\obj\Debug\CadFinalJazm.pdb

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinalJazmModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Serie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titulo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sinopsis" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="director" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="duracion" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="fechaEstreno" Type="DateTime" Precision="0" />
+    <Property Name="registroActivo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clave" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rol" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="registroActivo" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="FinaJazmEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Serie" EntityType="Self.Serie" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <FunctionImport Name="paSerieListar" ReturnType="Collection(FinalJazmModel.paSerieListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paUsuarioListar" ReturnType="Collection(FinalJazmModel.paUsuarioListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="paSerieListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="titulo" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="sinopsis" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="director" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="duracion" Nullable="true" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="12" />
+  </ComplexType>
+  <ComplexType Name="paUsuarioListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="clave" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="rol" Nullable="false" MaxLength="20" />
+    <Property Type="Boolean" Name="registroActivo" Nullable="true" />
+  </ComplexType>
+</Schema>
